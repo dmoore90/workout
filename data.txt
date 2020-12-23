@@ -1,0 +1,6 @@
+situps:bodyweight
+chinups:bodyweight
+overhead_press: 115
+squats:220
+benchpress:220
+deadlift:220

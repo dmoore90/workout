@@ -12,7 +12,7 @@ while (opt != "*"):
 	print("7. quit")
 	opt = input("Option: ")
 
-	if (opt == str(1)):
+	if (opt == str(1)):		
 		print("situps: ")
 		sum = 0
 		x = str(input("Enter rep: "))
