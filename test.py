@@ -1,20 +1,17 @@
 #! /usr/bin/env python3
 
-# with open("data.txt") as f:
-# 	read_data = f.read()
-# 	print(read_data)
-# f.closed
+def changeWeight(e, w):
+	f = open("data.txt", "w")
+	f.write(e + ":" + w) 
+	f.closed
 
-exercise = ""
-weight = ""
-line = ""
-f = open("data.txt", "r")
-for x in f.readline():
-	line += x
+def rFile():
+	f = open("data.txt", "r")
+	print(f.read())
+	f.closed
 
-while (x in line and x != ":"):
-	exercise += line
-	
-print(exercise)
-f.closed
+exercise = input("Enter exercise: ")
+weight = input("Enter weight: ")
 
+changeWeight(exercise, weight)
+rFile()
