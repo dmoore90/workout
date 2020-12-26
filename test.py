@@ -1,17 +1,20 @@
 #! /usr/bin/env python3
 
-def changeWeight(e, w):
-	f = open("data.txt", "w")
-	f.write(e + ":" + w) 
-	f.closed
+def wList(x, w):
+	f = open("data.txt", "a")
+	# exercise = input("enter ex: ")
+	f.write("{}".format(x))
+	# weight = input("enter weight: ")
+	f.write("{}\n".format(w))
+	f.close()
 
-def rFile():
-	f = open("data.txt", "r")
-	print(f.read())
-	f.closed
+workoutlist = {
+	"situps: ": "bodyweight", "chinups: ": "bodyweight", 
+	"overhead press: ": "bodyweight", "squat: ":"bodyweight", 
+	"bench press: ": "bodyweight", "deadlift: ": "bodyweight",
+	"---":"----"
+	}
 
-exercise = input("Enter exercise: ")
-weight = input("Enter weight: ")
+for k,v in workoutlist.items():
+	wList(k,v)
 
-changeWeight(exercise, weight)
-rFile()
