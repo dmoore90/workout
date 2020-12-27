@@ -1,14 +1,6 @@
 situps: bodyweight
 chinups: bodyweight
 overhead press: bodyweight
-squat: bodyweight
+squats: bodyweight
 bench press: bodyweight
 deadlift: bodyweight
--------
-situps: bodyweight
-chinups: bodyweight
-overhead press: bodyweight
-squat: bodyweight
-bench press: bodyweight
-deadlift: bodyweight
--------
