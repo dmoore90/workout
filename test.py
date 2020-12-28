@@ -46,8 +46,6 @@ def readVal():
 		workoutdict[exercises[i]] = weights[i]
 		i += 1
 
-
-
 def changeVal():
 	a = ""
 	while (a != "*"):
@@ -93,7 +91,7 @@ def printList():
 	for k,v in workoutdict.items():
 		wList(k,v)
 	f = open("data.txt", "a")
-	f.write("\n")
+	# f.write("\n")
 	f.closed
 
 readVal()

@@ -1,27 +1,48 @@
 situps: bodyweight
 chinups: bodyweight
-overhead press: bodyweight
+overhead press: 115
 squats: bodyweight
 bench press: bodyweight
 deadlift: bodyweight
-situps: 25
+situps: bodyweight
 chinups: bodyweight
-overhead press: bodyweight
-squats: bodyweight
+overhead press: 115
+squats: 220
 bench press: bodyweight
 deadlift: bodyweight
-
-situps: 25
-chinups: 25
+situps: bodyweight
+chinups: bodyweight
+overhead press: 115
+squats: 220
+bench press: 220
+deadlift: bodyweight
+situps: bodyweight
+chinups: bodyweight
 overhead press: 115
 squats: 220
 bench press: 220
 deadlift: 220
-
 situps: bodyweight
-chinups: 25
-overhead press: 25
-squats: 115
+chinups: bodyweight
+overhead press: 115
+squats: 220
 bench press: 220
 deadlift: 220
-
+situps: bodyweight
+chinups: bodyweight
+overhead press: 115
+squats: 220
+bench press: 220
+deadlift: 220
+situps: bodyweight
+chinups: bodyweight
+overhead press: 115
+squats: 220
+bench press: 220
+deadlift: 220
+situps: bodyweight
+chinups: bodyweight
+overhead press: 115
+squats: 220
+bench press: 220
+deadlift: 220
