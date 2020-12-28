@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 
+import wklist as f
+
 opt = ""
 while (opt != "*"):
 	print("Type option number.")
@@ -10,6 +12,7 @@ while (opt != "*"):
 	print("5. bench press")
 	print("6. deadlift")
 	print("7. quit")
+	print("8. change weights")
 	opt = input("Option: ")
 
 	if (opt == str(1)):		
@@ -68,3 +71,7 @@ while (opt != "*"):
 			x = input("Enter rep: ")
 	elif (opt == str(7)):
 		opt = "*"
+	elif (opt == str(8)):
+		f.readVal()
+		f.changeVal()
+		f.printList()	
