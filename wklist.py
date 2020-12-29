@@ -47,8 +47,8 @@ def readVal():
 		i += 1
 
 def changeVal():
-	a = ""
-	while (a != "*"):
+	opt = ""
+	while (opt != "*"):
 		for k,v in workoutdict.items():
 			print(k, v)
 		print("Press 1 for situps weight: ")
@@ -58,43 +58,39 @@ def changeVal():
 		print("Press 5 for bench press weight: ")
 		print("Press 6 for deadlift: ")
 		print("Press * to quit:")
-		a = input("Enter option number: ")
-		if (a == "1"):
-			print("true")
+		opt = input("Enter option number: ")
+		if (opt == "1"):
 			for k,v in workoutdict.items():
 				if (k == "situps"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "2"):
+		elif (opt == "2"):
 			for k,v in workoutdict.items():
 				if (k == "chinups"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "3"):
+		elif (opt == "3"):
 			for k,v in workoutdict.items():
 				if (k == "overhead press"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "4"):
+		elif (opt == "4"):
 			for k,v in workoutdict.items():
 				if (k == "squats"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "5"):
+		elif (opt == "5"):
 			for k,v in workoutdict.items():
 				if(k == "bench press"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "6"):
+		elif (opt == "6"):
 			for k,v in workoutdict.items():
 				if (k == "deadlift"):
 					workoutdict[k] = input("enter new weight: ")
-		elif (a == "*"):
-			a = "*"
+		elif (opt == "*"):
+			opt = "*"
 
 def printList():
 	for k,v in workoutdict.items():
 		wList(k,v)
 	f = open("data.txt", "a")
-	# f.write("\n")
 	f.closed
 
-readVal()
-changeVal()
-printList()
+
 
