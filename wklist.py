@@ -91,6 +91,3 @@ def printList():
 		wList(k,v)
 	f = open("data.txt", "a")
 	f.closed
-
-
-
