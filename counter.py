@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import wklist
+import changeList
 
 def counter():
 	opt = ""
@@ -73,6 +73,4 @@ def counter():
 		elif (opt == str(7)):
 			opt = "*"
 		elif (opt == str(8)):
-			wklist.readVal()
-			wklist.changeVal()
-			wklist.printList()
+			changeList.changeList()

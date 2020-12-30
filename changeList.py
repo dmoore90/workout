@@ -1,16 +1,7 @@
 #! /usr/bin/env python3
 
-def wList(x, w):
-	f = open("data.txt", "a")
-	# exercise = input("enter ex: ")
-	f.write("{}: ".format(x))
-	# weight = input("enter weight: ")
-	f.write("{}\n".format(w))
-	f.close()
-
-workoutdict = {}
-
-def readVal():
+def changeList():
+	workoutdict = {}
 	ex = ""
 	w = ""
 	lines = []
@@ -46,7 +37,7 @@ def readVal():
 		workoutdict[exercises[i]] = weights[i]
 		i += 1
 
-def changeVal():
+
 	opt = ""
 	while (opt != "*"):
 		for k,v in workoutdict.items():
@@ -86,8 +77,11 @@ def changeVal():
 		elif (opt == "*"):
 			opt = "*"
 
-def printList():
 	for k,v in workoutdict.items():
-		wList(k,v)
-	f = open("data.txt", "a")
-	f.closed
+		f = open("data.txt", "a")
+		# exercise = input("enter ex: ")
+		f.write("{}: ".format(k))
+		# weight = input("enter weight: ")
+		f.write("{}\n".format(v))
+		f = open("data.txt", "a")
+		f.close()
